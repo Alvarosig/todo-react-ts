@@ -1,0 +1,115 @@
+.task form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: calc(0px - 1.5rem - 6px); 
+}
+
+.task input[type='text'] {
+  background: var(--gray-500);
+  color: var(--gray-300);
+  border: none;
+  box-shadow: 0 0 0 2px var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.task input[type='text']:focus {
+  color: var(--gray-100);
+  box-shadow: 0 0 0 2px var(--purple-dark);
+}
+
+.task button[type='submit'] {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.task button[type='submit']:hover {
+  background: var(--blue);
+}
+
+.allTasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.countTask {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.countTask p{
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.countTask p:nth-child(1) {
+  color: var(--blue);
+}
+
+.countTask p:nth-child(2) {
+  color: var(--purple);
+}
+
+.countTask span {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 99px;
+  margin-left: 0.5rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.board::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gray-400), transparent);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.board svg {
+  color: var(--gray-400);
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.board p:nth-child(2) {
+  font-weight: 700;
+  color: var(--gray-300);
+}
+
+.board p:nth-child(3) {
+  font-weight: 400;
+  color: var(--gray-300);
+}
