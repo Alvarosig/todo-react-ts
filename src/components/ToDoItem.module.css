@@ -17,6 +17,9 @@
 .board span {
   display: block;
   flex: 1;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--gray-100);
 }
 
 .board input[type='checkbox'] {
